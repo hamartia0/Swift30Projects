@@ -1,26 +1,245 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N1f-0f-l3V">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="slP-kT-3RH">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="N1f-0f-l3V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="83f-FI-YTm">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8Ei-vP-eda" kind="relationship" relationship="viewControllers" id="QWC-ar-OwR"/>
+                        <segue destination="6Pf-IM-tTs" kind="relationship" relationship="viewControllers" id="ma9-as-Air"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myi-OU-cav" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--Us-->
+        <scene sceneID="MUp-kx-bc7">
+            <objects>
+                <viewController id="6Pf-IM-tTs" customClass="ContactViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="j8A-6h-UJq"/>
+                        <viewControllerLayoutGuide type="bottom" id="14X-KF-3DY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="0dD-hc-NyY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Us" id="UdE-us-Am4"/>
+                    <connections>
+                        <outlet property="scrollView" destination="9d2-7c-pCG" id="Elr-Hb-kUi"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJV-C3-tdx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="9d2-7c-pCG">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1035"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VqH-53-IYp">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="pBL-XH-tV6"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1D-GO-WTl">
+                            <rect key="frame" x="0.0" y="125" width="375" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="PmJ-v1-WNQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSD-YW-B8k">
+                            <rect key="frame" x="35" y="211" width="305" height="81.5"/>
+                            <string key="text">Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:</string>
+                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JR-KO-rI0">
+                            <rect key="frame" x="35" y="312.5" width="305" height="59"/>
+                            <string key="text">Whether you are looking for a turn-of-the-century wall set or a Zack Morris Special, we've got you covered. Give us a ring, and we will get you connected. </string>
+                            <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Hands-free phones available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WF2-ho-MCm">
+                            <rect key="frame" x="35" y="391.5" width="305" height="20"/>
+                            <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwG-Zr-laH">
+                            <rect key="frame" x="35" y="441.5" width="305" height="67"/>
+                            <string key="text">Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMu-0X-zx3">
+                            <rect key="frame" x="35" y="569.5" width="305" height="67"/>
+                            <string key="text">Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="xwG-Zr-laH" firstAttribute="leading" secondItem="9d2-7c-pCG" secondAttribute="leading" constant="35" id="0Fz-mN-fJD"/>
+                        <constraint firstItem="4JR-KO-rI0" firstAttribute="top" secondItem="qSD-YW-B8k" secondAttribute="bottom" constant="20" id="5jU-lq-kRR"/>
+                        <constraint firstItem="ZMu-0X-zx3" firstAttribute="leading" secondItem="9d2-7c-pCG" secondAttribute="leading" constant="35" id="8rY-J2-Zqs"/>
+                        <constraint firstItem="qSD-YW-B8k" firstAttribute="top" secondItem="y1D-GO-WTl" secondAttribute="bottom" constant="48" id="DD8-Zc-FiY"/>
+                        <constraint firstItem="4JR-KO-rI0" firstAttribute="leading" secondItem="9d2-7c-pCG" secondAttribute="leading" constant="35" id="JXe-jx-idb"/>
+                        <constraint firstAttribute="bottom" secondItem="ZMu-0X-zx3" secondAttribute="bottom" constant="398.5" id="NIa-BQ-NRu"/>
+                        <constraint firstItem="VqH-53-IYp" firstAttribute="top" secondItem="9d2-7c-pCG" secondAttribute="top" id="ORl-cT-ylv"/>
+                        <constraint firstItem="VqH-53-IYp" firstAttribute="centerX" secondItem="9d2-7c-pCG" secondAttribute="centerX" id="Tob-gQ-RF2"/>
+                        <constraint firstItem="ZMu-0X-zx3" firstAttribute="centerX" secondItem="9d2-7c-pCG" secondAttribute="centerX" id="W3U-L7-Hgc"/>
+                        <constraint firstItem="WF2-ho-MCm" firstAttribute="leading" secondItem="9d2-7c-pCG" secondAttribute="leading" constant="35" id="YIc-y4-JoD"/>
+                        <constraint firstAttribute="trailing" secondItem="y1D-GO-WTl" secondAttribute="trailing" id="Zpl-np-PhL"/>
+                        <constraint firstItem="VqH-53-IYp" firstAttribute="leading" secondItem="9d2-7c-pCG" secondAttribute="leading" id="a5V-xF-qHV"/>
+                        <constraint firstItem="xwG-Zr-laH" firstAttribute="centerX" secondItem="9d2-7c-pCG" secondAttribute="centerX" id="a8L-6C-o2E"/>
+                        <constraint firstItem="y1D-GO-WTl" firstAttribute="top" secondItem="VqH-53-IYp" secondAttribute="bottom" constant="25" id="aws-Oa-Cod"/>
+                        <constraint firstItem="4JR-KO-rI0" firstAttribute="centerX" secondItem="9d2-7c-pCG" secondAttribute="centerX" id="dbw-3y-CGc"/>
+                        <constraint firstItem="qSD-YW-B8k" firstAttribute="leading" secondItem="9d2-7c-pCG" secondAttribute="leading" constant="35" id="hmW-sG-w86"/>
+                        <constraint firstItem="WF2-ho-MCm" firstAttribute="top" secondItem="4JR-KO-rI0" secondAttribute="bottom" constant="20" id="kbB-2N-IT0"/>
+                        <constraint firstAttribute="trailing" secondItem="VqH-53-IYp" secondAttribute="trailing" id="lZR-rN-cy1"/>
+                        <constraint firstItem="ZMu-0X-zx3" firstAttribute="top" secondItem="xwG-Zr-laH" secondAttribute="bottom" constant="61" id="lju-z4-xT9"/>
+                        <constraint firstItem="y1D-GO-WTl" firstAttribute="leading" secondItem="9d2-7c-pCG" secondAttribute="leading" id="tYV-7X-Q5d"/>
+                        <constraint firstItem="WF2-ho-MCm" firstAttribute="centerX" secondItem="9d2-7c-pCG" secondAttribute="centerX" id="wEc-P4-mxD"/>
+                        <constraint firstItem="qSD-YW-B8k" firstAttribute="centerX" secondItem="9d2-7c-pCG" secondAttribute="centerX" id="wNx-80-LBp"/>
+                        <constraint firstItem="xwG-Zr-laH" firstAttribute="top" secondItem="WF2-ho-MCm" secondAttribute="bottom" constant="30" id="wOi-Js-g7x"/>
+                    </constraints>
+                </scrollView>
             </objects>
+            <point key="canvasLocation" x="830" y="-526"/>
+        </scene>
+        <!--Products-->
+        <scene sceneID="xLC-Mo-VU5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Ei-vP-eda" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Products" id="0Mm-FP-Xsb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uY1-WV-rgA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KO8-M8-7dS" kind="relationship" relationship="rootViewController" id="qSg-K8-bXs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KdT-vm-jNv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="123"/>
+        </scene>
+        <!--Products Table View Controller-->
+        <scene sceneID="B0y-dY-CpS">
+            <objects>
+                <tableViewController id="KO8-M8-7dS" customClass="ProductsTableViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="93" sectionHeaderHeight="18" sectionFooterHeight="18" id="3mu-HS-mVl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="productCell" rowHeight="93" id="ZS4-O3-TfP">
+                                <rect key="frame" x="0.0" y="56" width="375" height="93"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZS4-O3-TfP" id="QYo-fU-2bq">
+                                    <rect key="frame" x="0.0" y="0.0" width="308" height="92"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="8Uo-Xy-r9u" kind="push" identifier="showProduct" id="Izb-J8-GrB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="KO8-M8-7dS" id="vl4-ae-KC1"/>
+                            <outlet property="delegate" destination="KO8-M8-7dS" id="vbx-bS-NWX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="zMP-x1-Ach"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HQY-DT-EkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="122.78860569715144"/>
+        </scene>
+        <!--Product View Controller-->
+        <scene sceneID="LE7-9A-pw1">
+            <objects>
+                <viewController id="8Uo-Xy-r9u" customClass="ProductViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pJU-oe-t5S"/>
+                        <viewControllerLayoutGuide type="bottom" id="u8S-HO-Ki8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OGd-bm-liq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w1T-aN-cFF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wtz-DV-Q2B">
+                                <rect key="frame" x="108" y="200" width="158" height="41"/>
+                                <color key="backgroundColor" red="0.70424766240157477" green="0.47923934025082998" blue="0.071215851490748966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="button-addtocart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToCartPressed:" destination="8Uo-Xy-r9u" eventType="touchUpInside" id="K8D-5f-oCg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chF-0F-LFV">
+                                <rect key="frame" x="115" y="127" width="145" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZPi-Mp-20X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="u8S-HO-Ki8" firstAttribute="top" secondItem="Wtz-DV-Q2B" secondAttribute="bottom" constant="377" id="0Po-NQ-XG7"/>
+                            <constraint firstItem="Wtz-DV-Q2B" firstAttribute="centerX" secondItem="OGd-bm-liq" secondAttribute="centerX" id="0Qb-LF-Xyd"/>
+                            <constraint firstItem="chF-0F-LFV" firstAttribute="centerX" secondItem="OGd-bm-liq" secondAttribute="centerX" id="3oY-Vs-G8d"/>
+                            <constraint firstItem="Wtz-DV-Q2B" firstAttribute="top" secondItem="chF-0F-LFV" secondAttribute="bottom" constant="33" id="Bqc-KA-NGh"/>
+                            <constraint firstItem="u8S-HO-Ki8" firstAttribute="top" secondItem="w1T-aN-cFF" secondAttribute="bottom" id="loe-rr-JnI"/>
+                            <constraint firstAttribute="trailing" secondItem="w1T-aN-cFF" secondAttribute="trailing" id="rLH-BW-Tc0"/>
+                            <constraint firstItem="w1T-aN-cFF" firstAttribute="top" secondItem="pJU-oe-t5S" secondAttribute="bottom" id="sHl-eN-h3e"/>
+                            <constraint firstItem="w1T-aN-cFF" firstAttribute="leading" secondItem="OGd-bm-liq" secondAttribute="leading" id="w7M-Yo-ofF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lYH-vO-eH0"/>
+                    <connections>
+                        <outlet property="productImageView" destination="w1T-aN-cFF" id="hNK-uu-NwK"/>
+                        <outlet property="productNameLabel" destination="chF-0F-LFV" id="DoG-2j-ctv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yly-hC-Oy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2268" y="125.4872563718141"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button-addtocart" width="158" height="41"/>
+    </resources>
 </document>
